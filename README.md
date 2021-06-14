@@ -1,4 +1,4 @@
-# Solidity Template
+# Solidity Voting Example using template
 
 My favourite setup for writing Solidity smart contracts.
 
@@ -115,3 +115,16 @@ compiler version is to add the following fields to your VSCode user settings:
 ```
 
 Where of course `v0.8.4+commit.c7e474f2` can be replaced with any other version.
+
+##  Voting
+
+The idea is to create one contract per ballot, providing a short name for each option. Then the creator of the contract who serves as chairperson will give the right to vote to each address individually.
+
+The persons behind the addresses can then choose to either vote themselves or to delegate their vote to a person they trust.
+
+At the end of the voting time, winningProposal() will return the proposal with the largest number of votes
+
+##  Additional improvements
+
+Currently, many transactions are needed to assign the rights to vote to all participants. Can you think of a better way?
+
